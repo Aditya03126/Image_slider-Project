@@ -2,6 +2,7 @@
 
 ## Project Overview
 This project implements a responsive and interactive image slider (carousel) using HTML, CSS, and JavaScript. The slider allows users to navigate through a series of images with navigation buttons, indicator dots, and supports touch/swipe gestures.
+https://aditya03126.github.io/Image_slider-Project/
 
 ## Features
 - Responsive design that works on both desktop and mobile devices
