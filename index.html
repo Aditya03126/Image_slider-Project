@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Modern and responsive image slider with interactive controls">
+  <title>Modern Image Slider | Unified Mentor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#home"><i class="fas fa-images"></i> ImageSlider</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="https://unifiedmentor.com" target="_blank"><i class="fas fa-graduation-cap"></i> Unified Mentor</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <h1>Interactive Image Slider</h1>
+    <p class="description">A modern, responsive image carousel with touch support, autoplay functionality, 
+      and image zoom capabilities. Click on images to zoom in/out or use the controls to zoom and view images in fullscreen mode.
+    I was working on this website as a part of Unified Mentor Internship Program.</p>
+    <div class="upload-container">
+      <label for="imageInput" class="upload-label">Upload Your Own Images</label>
+      <input type="file" id="imageInput" multiple accept="image/*" />
+      <p class="upload-hint">Select multiple images to create your custom slideshow</p>
+    </div>
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <!-- Images will be inserted here by JavaScript -->
+      </div>
+      <button class="nav prev" id="prev" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+      <button class="nav next" id="next" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+      <div class="dots" id="dots">
+        <!-- Indicator dots will be inserted here by JavaScript -->
+      </div>
+      <button class="autoplay-toggle" id="autoplayToggle" aria-label="Toggle Autoplay"><i class="fas fa-pause"></i></button>
+      <div class="slider-info">
+        <span id="current-slide">1</span>/<span id="total-slides">5</span>
+      </div>
+      <div class="zoom-controls">
+        <button id="zoom-in" class="zoom-btn" aria-label="Zoom In"><i class="fas fa-search-plus"></i></button>
+        <button id="zoom-out" class="zoom-btn" aria-label="Zoom Out"><i class="fas fa-search-minus"></i></button>
+        <button id="fullscreen" class="zoom-btn" aria-label="View Fullscreen"><i class="fas fa-expand"></i></button>
+      </div>
+    </div>
+  </div>
+  
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Welcome to our innovative image slider project! We are passionate about creating beautiful, responsive, and user-friendly web components that enhance the visual experience of your website.</p>
+          <p>This project was developed as part of the Unified Mentor internship program, where we focus on building practical skills through hands-on projects that solve real-world problems.</p>
+          <p>Our team is dedicated to continuous improvement and implementing the latest web technologies to create seamless user experiences.</p>
+          <a href="https://www.unifiedmentor.com/about" target="_blank" class="learn-more-btn">Learn More About Unified Mentor <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-form-container">
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+        <div class="contact-links">
+          <a href="https://www.unifiedmentor.com/contact-us" target="_blank" class="contact-link">Visit Official Contact Page <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </form>
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>123 Web Dev Street, Coding City</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>contact@unifiedmentor.com</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <p>+1 (555) 123-4567</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
